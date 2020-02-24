@@ -20,7 +20,7 @@ class Stack {
     const items = _items.get(this);
     if (items.length === 0) throw new Error('Stack is empty.');
 
-    return items[items - 1];
+    return items[items.length - 1];
   }
 
   get count() {
